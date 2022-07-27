@@ -1,0 +1,8 @@
+# Ignore project files
+Project: LMS filter and ADALINE algorithm/
+Project: Rock vs Metal/
+
+# Ignore dependecies developed by user
+fourier.py
+aux_functions.py
+digital_filters.py
