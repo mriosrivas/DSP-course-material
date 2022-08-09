@@ -90,7 +90,13 @@ You can use a Docker container to run all the Jupyter notebooks by doing the fol
    docker pull continuumio/anaconda3
    ```
 
-2. Run the container
+2. Set an environment variable with the path where your repository was clonned. For example, if the repository was clonned on `/home/user/Documents`, the you will write
+   
+   ```bash
+   LOCAL_PATH=/home/user/Documents
+   ```
+
+3. Run the container
    
    ```bash
    docker run -i -t -p 8888:8888 --volume {$LOCAL_PATH}/DSP-course-material:/DSP-course-material \
@@ -99,9 +105,7 @@ You can use a Docker container to run all the Jupyter notebooks by doing the fol
        mkdir -p /DSP-course-material && \
        jupyter notebook \
        --notebook-dir=/DSP-course-material --ip='*' --port=8888 \
-       --no-browser --allow-root" \
+       --no-browser --allow-root"
    ```
-   
-   `$LOCAL_PATH` is the path where you cloned this repository.
 
 Check this [link](https://hub.docker.com/r/continuumio/anaconda3) if you need more information on how to use this container.
