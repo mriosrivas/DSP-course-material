@@ -79,3 +79,29 @@ This is a series of Jupyter Notebooks aimed to learn Digital Signal Processing u
 
 * [Grading, dependencies and dates](https://docs.google.com/spreadsheets/d/e/2PACX-1vQsbv9m7aa0PdTNJ9ltTTkNLOD4jc3j_KZNNov0n0jyx0lRmqzG0eO50r8AmUGFftjtH94QQDjvDF8L/pubhtml)
 * [Google Calendar](https://calendar.google.com/calendar/u/0?cid=NXRjcWJoOThtODM5NG8yNGQ0cDRhZm1rYm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+
+## Running Using Docker:
+
+You can use a Docker container to run all the Jupyter notebooks by doing the following steps:
+
+1. Pull the anaconda3 container
+   
+   ```bash
+   docker pull continuumio/anaconda3
+   ```
+
+2. Run the container
+   
+   ```bash
+   docker run -i -t -p 8888:8888 --volume {$LOCAL_PATH}/DSP-course-material:/DSP-course-material \
+       continuumio/anaconda3 /bin/bash -c "\
+       conda install jupyter -y --quiet && \
+       mkdir -p /DSP-course-material && \
+       jupyter notebook \
+       --notebook-dir=/DSP-course-material --ip='*' --port=8888 \
+       --no-browser --allow-root" \
+   ```
+   
+   `$LOCAL_PATH` is the path where you cloned this repository.
+
+Check this [link](https://hub.docker.com/r/continuumio/anaconda3) if you need more information on how to use this container.
