@@ -6,3 +6,6 @@ Project: Rock vs Metal/
 fourier.py
 aux_functions.py
 digital_filters.py
+
+# Ignore Checkpoints
+.ipynb_checkpoints
