@@ -1,5 +1,4 @@
 # Ignore project files
-Project: Rock vs Metal/
 
 # Ignore dependecies developed by user
 fourier.py
