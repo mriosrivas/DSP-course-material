@@ -77,10 +77,9 @@ This is a series of Jupyter Notebooks aimed to learn Digital Signal Processing u
 
 ## More information:
 
-* [Grading, dependencies and dates](https://docs.google.com/spreadsheets/d/e/2PACX-1vQsbv9m7aa0PdTNJ9ltTTkNLOD4jc3j_KZNNov0n0jyx0lRmqzG0eO50r8AmUGFftjtH94QQDjvDF8L/pubhtml)
-* [Google Calendar](https://calendar.google.com/calendar/u/0?cid=NXRjcWJoOThtODM5NG8yNGQ0cDRhZm1rYm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
-
-## Running Using Docker:
+* [Calendar - Google Drive](https://docs.google.com/spreadsheets/d/e/2PACX-1vRtuxRoc4WAkxlhIIzUuHW4ldcrHZxXXcQajIC32d89g5fT3zGkVJ2Z8BlP5DMcwBgDnI9j1PuEGoY2/pubhtml)
+* [Shareable Online Calendar and Scheduling - Google Calendar](https://calendar.google.com/calendar/u/0?cid=NXRjcWJoOThtODM5NG8yNGQ0cDRhZm1rYm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ)
+* ## Running Using Docker:
 
 You can use a Docker container to run all the Jupyter notebooks by doing the following steps:
 
@@ -90,7 +89,7 @@ You can use a Docker container to run all the Jupyter notebooks by doing the fol
    docker pull continuumio/anaconda3
    ```
 
-2. Set an environment variable with the path where your repository was clonned. For example, if the repository was clonned on `/home/user/Documents`, the you will write
+2. Set an environment variable with the path where your repository was cloned. For example, if the repository was cloned on `/home/user/Documents`, the you will write
    
    ```bash
    LOCAL_PATH=/home/user/Documents
